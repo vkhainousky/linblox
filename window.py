@@ -28,7 +28,7 @@ def msweb2():
 def launch():
     try:
         print("0002: Roblox player exec")
-        os.system("wine roblox/rp.exe")
+        os.system("wine roblox/rp.exe " + args.get())
     except Exception as ex:
         s = mixer.Sound('sound/error.mp3')
         s.play()
@@ -36,7 +36,7 @@ def launch():
 def studio():
     try:
         print("0002: Roblox studio exec")
-        os.system("wine roblox/rs.exe")
+        os.system("wine roblox/rs.exe " + args.get())
     except Exception as ex:
         s = mixer.Sound('sound/error.mp3')
         s.play()
